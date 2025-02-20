@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodnight!</title>
+
+    <style>
+        /* Centering content */
+        body {
+            background-image: url('goodnight.jpg');
+            /* Replace with your image URL */
+            background-size: cover;
+            /* Ensures the image covers the whole page */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents image from repeating */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: beige;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styled heading */
+        h2 {
+          font-family: pacifico ;
+            font-size: 36px;
+            color: beige;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, lightblue, blue);
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        /* Styled button */
+        .button {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: pink;
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            border: 5px solid brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Goodnight, Love!&#128537&#127769</h2>
+    <button class="button" onclick="myFunction()">Click me!</button>
+    <br>
+    <img class="picture" src="gn.gif" alt="goodnight">
+
+    <script>
+        function myFunction() {
+            alert("Goodnight, love! Sweet dreams! Iloveyou, Sammy 😘🌙");
+            document.querySelector(".picture").src = "kiss.gif";
+        }
+    </script>
+
+</body>
+
+</html>
